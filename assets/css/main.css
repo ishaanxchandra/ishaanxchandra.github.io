@@ -1474,3 +1474,59 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+.php-email-form input,
+.php-email-form textarea {
+  background-color: #111;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.php-email-form input::placeholder,
+.php-email-form textarea::placeholder {
+  color: #777;
+}
+
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+  border-color: #00ff88;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
+
+.php-email-form button[type="submit"] {
+  background-color: #00ff88;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background-color: #00cc6a;
+}
+
+.sent-message,
+.error-message {
+  display: none;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.sent-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
